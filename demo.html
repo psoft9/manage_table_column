@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<!-- For IE -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- For Resposive Device -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+		<script src="./manage-table-columns.js"></script>
+		<style>
+			table{
+				width: 100%;
+				border-collapse: collapse;
+			}
+			table th, table td{border: 1px solid red}
+		</style>
+	</head>
+
+	<body>
+		<button type="button" onclick="openManageColumns('#test')">Manage Columns</button>
+		<table id="test">
+			<thead>
+				<tr>
+					<th>a</th>
+					<th class="fix">b</th>
+					<th>c</th>
+					<th>d</th>
+					<th>e</th>
+					<th>f</th>
+					<th>g</th>
+					<th>h</th>
+					<th>i</th>
+					<th>j</th>
+					<th>k</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>a1</td>
+					<td>b1</td>
+					<td>c1</td>
+					<td>d1</td>
+					<td>e1</td>
+					<td>f1</td>
+					<td>g1</td>
+					<td>h1</td>
+					<td>i1</td>
+					<td>j1</td>
+					<td>k1</td>
+				</tr>
+				<tr>
+					<td>a2</td>
+					<td>b2</td>
+					<td>c2</td>
+					<td>d2</td>
+					<td>e2</td>
+					<td>f2</td>
+					<td>g2</td>
+					<td>h2</td>
+					<td>i2</td>
+					<td>j2</td>
+					<td>k2</td>
+				</tr>
+				<tr>
+					<td>a3</td>
+					<td>b3</td>
+					<td>c3</td>
+					<td>d3</td>
+					<td>e3</td>
+					<td>f3</td>
+					<td>g3</td>
+					<td>h3</td>
+					<td>i3</td>
+					<td>j3</td>
+					<td>k3</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
