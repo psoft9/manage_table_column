@@ -9,30 +9,48 @@
 		<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
 		<script src="./manage-table-columns.js"></script>
 		<style>
+			body{font-family: Arial, Helvetica, sans-serif;}
 			table{
 				width: 100%;
 				border-collapse: collapse;
+				box-shadow: 2px 2px 10px #ddd;
+				padding: 10px;
 			}
-			table th, table td{border: 1px solid red}
+			table th{
+				background-color: #ccc;
+			}
+			table th, table td{border: 1px solid #bbb; padding: 10px;}
+
+			.btn{
+				color: #fff;
+				background: linear-gradient(360deg, #0000ce, #7474ff, #0000ce);
+				border: none;
+				border-radius: 10px;
+				padding: 10px 20px;
+				box-shadow: 2px 2px 10px #3333;
+				font-size: 1.2rem;
+				margin-top: 15px;
+				cursor: pointer;
+				transition: all 0.3s;
+			}
 		</style>
 	</head>
 
 	<body>
-		<button type="button" onclick="openManageColumns('#test')">Manage Columns</button>
 		<table id="test">
 			<thead>
 				<tr>
-					<th>a</th>
-					<th class="fix">b</th>
-					<th>c</th>
-					<th>d</th>
-					<th>e</th>
-					<th>f</th>
-					<th>g</th>
-					<th>h</th>
-					<th>i</th>
-					<th>j</th>
-					<th>k</th>
+					<th>Abhira</th>
+					<th>Badhira</th>
+					<th class="fix">Cadira</th>
+					<th>Damira</th>
+					<th>Edira</th>
+					<th>Fathita</th>
+					<th>Ghgira</th>
+					<th>Hamira</th>
+					<th>Ishara</th>
+					<th>Jagira</th>
+					<th>Katira</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -77,5 +95,7 @@
 				</tr>
 			</tbody>
 		</table>
+
+		<button class="btn" type="button" onclick="openManageColumns('#test')">Manage Columns</button>
 	</body>
 </html>
